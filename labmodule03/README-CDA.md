@@ -6,37 +6,35 @@ Be sure to implement all the PIOT-CDA-* issues (requirements).
 
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+Lab Module 03 focuses on building a simple simulation and data generation capability within the CDA. The implementation involves using a provided or custom-built data generator to simulate sensor readings for humidity, pressure, and temperature. The generated data is then packaged into telemetry objects, which contain additional information about the device and its environment. A threshold-based trigger is also incorporated to simulate actuation events when specific conditions are met.
 
-What does your implementation do? 
-
-How does your implementation work?
+The implementation applies Object-Oriented design principles to facilitate easy expansion, allowing additional simulated sensing and actuation capabilities to be integrated seamlessly. The simulation logs actuation events as part of the emulated process, ensuring that data flow and device responses are accurately represented within the CDA framework.
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch.
-
-URL: 
+URL: https://github.com/Ventupentu/python-components/tree/labmodule03
 
 ### Unit Tests Executed
 
-NOTE: The instructor will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
+The following unit tests were executed to validate the implementation and ensure no regressions were introduced:
 
-- 
-- 
-- 
+- ActuatorDataTest
+- SensorDataTest
+- SystemPerformanceDataTest
+- HumiditySensorSimTaskTest
+- PressureSensorSimTaskTest
+- TemperatureSensorSimTaskTest
+- HumidifierActuatorSimTaskTest
+- HvacActuatorSimTaskTest
 
 ### Integration Tests Executed
 
-NOTE: The instructor will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
+The following integration tests were executed to verify system-wide functionality:
 
-- 
-- 
-- 
+- SensorAdapterManagerTest
+- ActuatorAdapterManagerTest
+- DeviceDataManagerNoCommsTest
+- ConstrainedDeviceAppTest
 
 EOF.
+

@@ -6,38 +6,22 @@ Be sure to implement all the PIOT-GDA-* issues.
 
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+The Gateway Device Application (GDA) is a Java-based IoT edge application designed to gather and log essential system performance data. Similar to the CDA, the GDA collects metrics like CPU utilization and memory usage at predefined intervals. The `SystemPerformanceManager` module plays a central role in scheduling and managing these data collection tasks, ensuring consistent monitoring and logging.
 
-What does your implementation do? 
-
-How does your implementation work?
+The implementation structure ensures modularity and maintainability, incorporating `BaseSystemUtilTask` as a foundation for extensible performance monitoring. The `SystemCpuUtilTask` and `SystemMemUtilTask` classes are integrated into the `SystemPerformanceManager`, allowing seamless execution of monitoring functions. The application logs collected data for further analysis and debugging purposes, forming a critical part of the IoT edge computing infrastructure.
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch.
-
-URL: 
-
+URL: https://github.com/Ventupentu/java-components/tree/labmodule02
 
 ### Unit Tests Executed
 
-NOTE: The instructor will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
-
-- 
-- 
-- 
+- `ConfigUtilTest`
+- `GatewayDeviceAppTest`
+- `SystemCpuUtilTaskTest`
+- `SystemMemUtilTaskTest`
 
 ### Integration Tests Executed
 
-NOTE: The instructor will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
-
-- 
-- 
-- 
-
-EOF.
+- `SystemPerformanceManagerTest`
+- `GatewayDeviceAppTest`

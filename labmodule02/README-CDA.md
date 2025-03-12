@@ -4,39 +4,23 @@
 
 Be sure to implement all the PIOT-CDA-* issues (requirements).
 
-### Description
+## Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+The Constrained Device Application (CDA) is a lightweight IoT edge application developed in Python. In this module, the CDA is responsible for collecting and logging basic system performance metrics such as CPU utilization and memory usage at regular intervals. The application uses a `SystemPerformanceManager` module that schedules and manages data collection tasks for these metrics. Additionally, the CDA incorporates base system utility tasks to ensure modular and extendable performance monitoring.
 
-What does your implementation do? 
+The implementation follows a structured approach where the `SystemPerformanceManager` integrates `SystemCpuUtilTask` and `SystemMemUtilTask` to collect data efficiently. The CDA's main application ensures smooth operation by starting and stopping the performance monitoring tasks dynamically. The collected performance data is logged systematically, which provides insights into the system's operational status.
 
-How does your implementation work?
+## Code Repository and Branch
 
-### Code Repository and Branch
+URL: https://github.com/Ventupentu/python-components/tree/labmodule02
 
-NOTE: Be sure to include the branch.
+## Unit Tests Executed
 
-URL: 
+- `ConfigUtilTest`
+- `SystemCpuUtilTaskTest`
+- `SystemMemUtilTaskTest`
 
-### Unit Tests Executed
+## Integration Tests Executed
 
-NOTE: The instructor will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
-
-- 
-- 
-- 
-
-### Integration Tests Executed
-
-NOTE: The instructor will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
-
-- 
-- 
-- 
-
-EOF.
+- `ConstrainedDeviceAppTest`
+- `SystemPerformanceManagerTest`
