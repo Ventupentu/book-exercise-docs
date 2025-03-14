@@ -2,42 +2,36 @@
 
 ## Lab Module 04
 
-Be sure to implement all the PIOT-CDA-* issues (requirements).
-
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+In this implementation, we integrate the Sense HAT emulator into our Constrained Device Application (CDA) to simulate real-time sensor readings and actuation capabilities. The system collects environmental data, such as temperature, humidity, and pressure, using the emulator's built-in sensors and processes this information according to predefined logic. Additionally, the implementation includes an actuation mechanism that allows the CDA to interact with the emulator's LED display, providing a visual representation of specific events or conditions.
 
-What does your implementation do? 
-
-How does your implementation work?
+Our approach follows the design principles established in Lab Module 03, ensuring seamless integration with previous components. The implementation is structured into modules that handle data acquisition, processing, and actuation separately, improving maintainability and scalability. Data is periodically fetched from the Sense HAT emulator, stored, and analyzed for threshold-based alerts. If an alert condition is met, an actuation command is sent to the LED display. Furthermore, the system is designed to be deployable on a Raspberry Pi, allowing for real-world sensor interaction via the I2C bus and GPIO.
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch.
+**URL:** [Insert repository URL here]
 
-URL: 
-
+**Branch:** [Insert branch name here]
 
 ### Unit Tests Executed
 
-NOTE: The instructor will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
+The following unit tests have been executed to ensure the correctness of the CDA implementation and to prevent regressions:
 
-- 
-- 
-- 
+- None
 
 ### Integration Tests Executed
 
-NOTE: The instructor will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
+The following integration tests have been executed to validate the end-to-end functionality of the system:
 
-- 
-- 
-- 
+- HumidityEmulatorTaskTest.py
+- PressureEmulatorTaskTest.py
+- TemperatureEmulatorTaskTest.py
+- HumidifierEmulatorTaskTest.py
+- HvacEmulatorTaskTest.py
+- LedDisplayEmulatorTaskTest.py
+- SenseHatEmulatorQuickTest.py
+- SensorEmulatorManagerTest.py
 
 EOF.
+
