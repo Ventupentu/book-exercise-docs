@@ -26,6 +26,9 @@ The following unit tests were executed to validate the implementation and ensure
 - TemperatureSensorSimTaskTest
 - HumidifierActuatorSimTaskTest
 - HvacActuatorSimTaskTest
+- ConfigUtilTest
+- SystemCpuUtilTaskTest
+- SystemMemUtilTaskTest
 
 ### Integration Tests Executed
 
@@ -35,6 +38,8 @@ The following integration tests were executed to verify system-wide functionalit
 - ActuatorAdapterManagerTest
 - DeviceDataManagerNoCommsTest
 - ConstrainedDeviceAppTest
+- SystemPerformanceManagerTest
+- GatewayDeviceAppTest
 
 EOF.
 

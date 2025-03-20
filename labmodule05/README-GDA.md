@@ -23,6 +23,10 @@ NOTE: The instructor will execute your unit tests. You only need to list each te
 - SystemPerformanceDataTest
 - SystemSatateDataTest
 - DataUtilTest
+- ConfigUtilTest
+- GatewayDeviceAppTest
+- SystemCpuUtilTaskTest
+- SystemMemUtilTaskTest
 
 
 ### Integration Tests Executed

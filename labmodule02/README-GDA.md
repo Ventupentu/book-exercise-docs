@@ -16,12 +16,12 @@ URL: https://github.com/Ventupentu/java-components/tree/labmodule02
 
 ### Unit Tests Executed
 
-- `ConfigUtilTest`
-- `GatewayDeviceAppTest`
-- `SystemCpuUtilTaskTest`
-- `SystemMemUtilTaskTest`
+- ConfigUtilTest
+- GatewayDeviceAppTest
+- SystemCpuUtilTaskTest
+- SystemMemUtilTaskTest
 
 ### Integration Tests Executed
 
-- `SystemPerformanceManagerTest`
-- `GatewayDeviceAppTest`
+- SystemPerformanceManagerTest
+- GatewayDeviceAppTest

@@ -16,7 +16,17 @@ Our approach follows the design principles established in Lab Module 03, ensurin
 
 The following unit tests have been executed to ensure the correctness of the CDA implementation and to prevent regressions:
 
-- None
+- ActuatorDataTest
+- SensorDataTest
+- SystemPerformanceDataTest
+- HumiditySensorSimTaskTest
+- PressureSensorSimTaskTest
+- TemperatureSensorSimTaskTest
+- HumidifierActuatorSimTaskTest
+- HvacActuatorSimTaskTest
+- ConfigUtilTest
+- SystemCpuUtilTaskTest
+- SystemMemUtilTaskTest
 
 ### Integration Tests Executed
 
@@ -30,6 +40,12 @@ The following integration tests have been executed to validate the end-to-end fu
 - LedDisplayEmulatorTaskTest.py
 - SenseHatEmulatorQuickTest.py
 - SensorEmulatorManagerTest.py
+- SensorAdapterManagerTest
+- ActuatorAdapterManagerTest
+- DeviceDataManagerNoCommsTest
+- ConstrainedDeviceAppTest
+- SystemPerformanceManagerTest
+- GatewayDeviceAppTest
 
 EOF.
 

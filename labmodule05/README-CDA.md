@@ -19,6 +19,17 @@ URL:  https://github.com/Ventupentu/java-components/tree/labmodule5
 NOTE: The instructor will execute your unit tests. You only need to list each test case below (e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too, since you need to ensure you haven't introduced regressions.
 
 - DataUtilTest
+- ActuatorDataTest
+- SensorDataTest
+- SystemPerformanceDataTest
+- HumiditySensorSimTaskTest
+- PressureSensorSimTaskTest
+- TemperatureSensorSimTaskTest
+- HumidifierActuatorSimTaskTest
+- HvacActuatorSimTaskTest
+- ConfigUtilTest
+- SystemCpuUtilTaskTest
+- SystemMemUtilTaskTest
 
 ### Integration Tests Executed
 
@@ -26,5 +37,19 @@ NOTE: The instructor will execute most of your integration tests using their own
 
 - SystemPerformanceManagerTest
 - DataIntegrationTest
+- HumidityEmulatorTaskTest.py
+- PressureEmulatorTaskTest.py
+- TemperatureEmulatorTaskTest.py
+- HumidifierEmulatorTaskTest.py
+- HvacEmulatorTaskTest.py
+- LedDisplayEmulatorTaskTest.py
+- SenseHatEmulatorQuickTest.py
+- SensorEmulatorManagerTest.py
+- SensorAdapterManagerTest
+- ActuatorAdapterManagerTest
+- DeviceDataManagerNoCommsTest
+- ConstrainedDeviceAppTest
+- GatewayDeviceAppTest
+
 
 EOF.
