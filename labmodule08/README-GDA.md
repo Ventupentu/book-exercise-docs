@@ -10,13 +10,19 @@ NOTE: Include two full paragraphs describing your implementation approach by ans
 
 What does your implementation do? 
 
+A CoAP server has been implemented to enable communication between different parts of the program.
+
 How does your implementation work?
+
+The CoapServerGateway class starts the CoAP server and registers resources according to the structure defined in ResourceNameEnum.
+
+> **Note:** Due to a mistake during the development process, some features that belong to Lab Module 11 were accidentally committed and pushed to the `labmodule8` branch. Please disregard any unrelated changes when reviewing the Lab 08 implementation.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: https://github.com/Ventupentu/java-components/tree/labmodule08
 
 
 ### Unit Tests Executed
@@ -36,7 +42,7 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
+- CoapServerGatewayTest
 - 
 - 
 

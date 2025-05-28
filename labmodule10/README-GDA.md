@@ -8,15 +8,19 @@ Be sure to implement all the PIOT-GDA-* issues (requirements) listed.
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+What does your implementation do?
+
+It asynchronously receives information from the CDA and processes it.
 
 How does your implementation work?
+
+It uses MqttAsyncClient instead of the regular MqttClient, and the MqttClientConnector class is adapted accordingly. Encryption is also added to the communication. IMqttMessageListener is implemented to create listeners for the subscriptions.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: //github.com/Ventupentu/java-components/tree/labmodule10
 
 
 
@@ -37,7 +41,7 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
+- MqttClientConnectorTest
 - 
 - 
 

@@ -1,43 +1,35 @@
-# Constrained Device Application (Connected Devices)
+# Gateway Device Application (Connected Devices)
 
-## Lab Module 12 - Semester Project - CDA Components
+## Lab Module 12 - Semester Project - GDA Components
 
-Be sure to implement all the PIOT-CDA-* issues (requirements) listed.
+Be sure to implement all the PIOT-GDA-* issues (requirements) listed.
 
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+The GDA has been enhanced to support advanced data aggregation, protocol bridging, and cloud integration for the semester project. It now receives and processes sensor data (including vibration, humidity, temperature, and pressure) and actuator commands from multiple CDAs via MQTT and CoAP. The GDA can forward relevant data to cloud services (such as Ubidots), store it locally, and provide management and monitoring interfaces. The system is designed to be robust, scalable, and easily extensible for new sensor types or cloud endpoints.
 
-What does your implementation do? 
-
-How does your implementation work?
+The GDA manages all protocol connections, including MQTT client, CoAP server, and optional persistence layers. It ensures reliable message delivery, topic subscription management, and data transformation as needed for downstream services. The codebase includes comprehensive unit and integration tests to validate all core features and prevent regressions.
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch.
-
-URL: 
-
+URL:  
+https://github.com/Ventupentu/java-components/tree/labmodule_12
 
 ### Unit Tests Executed
 
-NOTE: The instructor will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
-
-- 
-- 
-- 
+- ConfigUtilTest
+- DataUtilTest
+- ActuatorDataTest
+- SensorDataTest
+- SystemPerformanceDataTest
+- MqttClientConnectorTest
+- CoapServerGatewayTest
 
 ### Integration Tests Executed
 
-NOTE: The instructor will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
-
-- 
-- 
-- 
+- DeviceDataManagerTest
+- MqttClientConnectorTest
+- CoapServerGatewayTest
+- GatewayDeviceAppTest
 
 EOF.

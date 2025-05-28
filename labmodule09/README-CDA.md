@@ -7,16 +7,19 @@ Be sure to implement all the PIOT-CDA-* issues (requirements) listed.
 ### Description
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+What does your implementation do?
 
-What does your implementation do? 
+It defines a CoAP client that allows sending and receiving messages over CoAP. The client can perform basic operations such as sending GET, POST, PUT, and DELETE requests.
 
 How does your implementation work?
+
+It uses the CoAPthon library to create a CoAP client that connects to the GDA.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: //github.com/Ventupentu/python-components/tree/labmodule09
 
 
 
@@ -37,7 +40,7 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
+- CoapClientConnectorTest
 - 
 - 
 

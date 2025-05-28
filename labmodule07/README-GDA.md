@@ -6,38 +6,29 @@ Be sure to implement all the PIOT-GDA-* issues (requirements) listed.
 
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+This implementation adds MQTT client connectivity to the Gateway Device Application (GDA). The main goal is to enable the GDA to connect to an MQTT broker, subscribe to relevant topics, and publish messages as required for IoT gateway operations. The core of this implementation is the new `MqttClientConnector` class, which wraps the Eclipse Paho MQTT client and provides methods for connecting, disconnecting, subscribing, unsubscribing, and publishing messages. The DeviceDataManager is updated to instantiate and manage the MQTT client, including subscribing to all required topics on startup and unsubscribing on shutdown.
 
-What does your implementation do? 
-
-How does your implementation work?
+The implementation is designed to be modular and configurable. All MQTT connection parameters (host, port, keep-alive, etc.) are loaded from the configuration file using `ConfigUtil` and `ConfigConst`. The GDA can now act as a bridge between the Constrained Device Application (CDA) and cloud or local services using MQTT as the transport protocol. This enables seamless integration with other IoT components and platforms.
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch.
-
-URL: 
-
+URL:  
+https://github.com/Ventupentu/java-components/tree/labmodule07
 
 ### Unit Tests Executed
 
-NOTE: The instructor will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
-
-- 
-- 
-- 
+- ConfigUtilTest
+- DataUtilTest
+- ActuatorDataTest
+- SensorDataTest
+- SystemPerformanceDataTest
+- MqttClientConnectorTest
 
 ### Integration Tests Executed
 
-NOTE: The instructor will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
+- DeviceDataManagerTest
+- MqttClientConnectorTest
 
-- 
-- 
-- 
+> **Note:** All previous unit and integration tests were executed to ensure no regressions were introduced and that MQTT integration works as expected.
 
 EOF.

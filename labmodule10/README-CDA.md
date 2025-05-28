@@ -8,15 +8,19 @@ Be sure to implement all the PIOT-CDA-* issues (requirements) listed.
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+What does your implementation do?
+
+Encryption methods have been added to make the connection with the broker more secure.
 
 How does your implementation work?
+
+Encryption is implemented using the `tls_set` function of the MQTT client, which utilizes a certificate file.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: //github.com/Ventupentu/python-components/tree/labmodule10
 
 
 ### Unit Tests Executed
@@ -36,8 +40,9 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
-- 
-- 
+- MqttClientConnectorTest
+- DeviceDataManagerIntegrationTest
+- DeviceDataManagerWithCommsTest
+- DeviceDataManagerWithMqttClientOnly
 
 EOF.
