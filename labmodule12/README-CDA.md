@@ -13,7 +13,7 @@ The GDA manages all protocol connections, including MQTT client, CoAP server, an
 ### Code Repository and Branch
 
 URL:  
-https://github.com/Ventupentu/java-components/tree/labmodule_12
+https://github.com/Ventupentu/python-components/tree/labmodule_12
 
 ### Unit Tests Executed
 
